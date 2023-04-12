@@ -466,7 +466,7 @@ footer .content-wrapper .contact-us a.bg-button {
   font-size: 1.3rem;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 375px) and (min-width: 300px) {
   body {
     background-color: white;
   }
