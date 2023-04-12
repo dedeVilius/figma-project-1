@@ -134,7 +134,15 @@ span.upper-letters {
 }
 
 header {
+  position: relative;
   margin-top: 50px;
+}
+
+header::before {
+  content: url(/img/2-circle.svg);
+  position: absolute;
+  left: 0;
+  top: 75%;
 }
 
 header .content-wrapper {
@@ -184,7 +192,15 @@ header nav ul li a.special {
 }
 
 .hero .hero-text {
+  position: relative;
   width: 495px;
+}
+
+.hero .hero-text::before {
+  content: url(/img/1-circle.svg);
+  position: absolute;
+  top: -35px;
+  right: 54%;
 }
 
 .hero .hero-image img {
@@ -202,11 +218,19 @@ section:last-child {
 
 section.services .content-wrapper {
   display: flex;
+  position: relative;
 }
 
 section.services .content-wrapper .left-side,
 section.services .content-wrapper .right-side {
   width: 50%;
+}
+
+section.services .content-wrapper .left-side::before {
+  content: url(/img/1-rectangle.svg);
+  position: absolute;
+  left: -130px;
+  top: -40px
 }
 
 section.services .content-wrapper .left-side .simple-text {
@@ -247,13 +271,32 @@ section.products .product-list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 40px;
+  position: relative;
 }
 
 section.products .product-list .product-list-item {
+  position: relative;
   padding: 70px 50px;
   border-radius: 8px;
-  background: rgb(100, 123, 117);
-  background: linear-gradient(160deg, rgba(100, 123, 117, 0.05) 0%, rgba(100, 123, 100, 0) 77%, rgba(100, 123, 100, 0) 100%);
+  background-color: white;
+  box-shadow: inset 0 -20px 60px -50px var(--title-primary-color);
+  z-index: 10;
+}
+
+section.products .product-list::before {
+  content: url(/img/1-square.svg);
+  position: absolute;
+  bottom: -45px;
+  left: -35px;
+  z-index: -1;
+}
+
+section.products .product-list::after {
+  content: url(/img/2-rectangle.svg);
+  position: absolute;
+  bottom: -47px;
+  right: -263px;
+  z-index: -1;
 }
 
 section.products .product-list .product-list-item img {
@@ -283,6 +326,19 @@ section.about-us .content-wrapper {
 section.about-us .content-wrapper .left-side,
 section.about-us .content-wrapper .right-side {
   width: 50%;
+}
+
+section.about-us .content-wrapper .left-side {
+  position: relative;
+}
+
+section.about-us .content-wrapper .left-side::after {
+  position: relative;
+  content: url(/img/2-square.svg);
+  position: absolute;
+  bottom: -60px;
+  right: -60px;
+  z-index: -1;
 }
 
 section.about-us .content-wrapper .left-side img {
