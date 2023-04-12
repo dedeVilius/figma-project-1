@@ -14,25 +14,25 @@
 @font-face {
   font-family: 'Avenir Next';
   font-weight: 300;
-  src: url(/fonts/AvenirNextLTPro-Regular.otf);
+  src: url(../fonts/AvenirNextLTPro-Regular.otf);
 }
 
 @font-face {
   font-family: 'Avenir Next';
   font-weight: 500;
-  src: url(/fonts/AvenirNext-Medium.otf);
+  src: url(../fonts/AvenirNext-Medium.otf);
 }
 
 @font-face {
   font-family: 'Avenir Next';
   font-weight: 700;
-  src: url(/fonts/AvenirNextLTPro-Bold.otf);
+  src: url(../fonts/AvenirNextLTPro-Bold.otf);
 }
 
 @font-face {
   font-family: 'Avenir Next';
   font-style: italic;
-  src: url(/fonts/AvenirNextLTPro-It.otf);
+  src: url(../fonts/AvenirNextLTPro-It.otf);
 }
 
 *,
@@ -139,7 +139,7 @@ header {
 }
 
 header::before {
-  content: url(/img/2-circle.svg);
+  content: url(../img/2-circle.svg);
   position: absolute;
   left: 0;
   top: 75%;
@@ -197,7 +197,7 @@ header nav ul li a.special {
 }
 
 .hero .hero-text::before {
-  content: url(/img/1-circle.svg);
+  content: url(../img/1-circle.svg);
   position: absolute;
   top: -35px;
   right: 54%;
@@ -227,7 +227,7 @@ section.services .content-wrapper .right-side {
 }
 
 section.services .content-wrapper .left-side::before {
-  content: url(/img/1-rectangle.svg);
+  content: url(../img/1-rectangle.svg);
   position: absolute;
   left: -130px;
   top: -40px
@@ -284,7 +284,7 @@ section.products .product-list .product-list-item {
 }
 
 section.products .product-list::before {
-  content: url(/img/1-square.svg);
+  content: url(../img/1-square.svg);
   position: absolute;
   bottom: -45px;
   left: -35px;
@@ -292,7 +292,7 @@ section.products .product-list::before {
 }
 
 section.products .product-list::after {
-  content: url(/img/2-rectangle.svg);
+  content: url(../img/2-rectangle.svg);
   position: absolute;
   bottom: -47px;
   right: -263px;
@@ -334,7 +334,7 @@ section.about-us .content-wrapper .left-side {
 
 section.about-us .content-wrapper .left-side::after {
   position: relative;
-  content: url(/img/2-square.svg);
+  content: url(../img/2-square.svg);
   position: absolute;
   bottom: -60px;
   right: -60px;
