@@ -53,6 +53,10 @@ body {
   margin: 0;
 }
 
+main {
+  overflow: hidden;
+}
+
 .primary-title,
 .classic-primary-title,
 .secondary-title,
@@ -197,8 +201,12 @@ header nav ul li a.special {
 }
 
 .hero .hero-text::before {
-  content: url(../img/1-circle.svg);
+  content: "";
   position: absolute;
+  background-image: url(../img/1-circle.svg);
+  background-size: 84px 84px;
+  width: 84px;
+  height: 84px;
   top: -35px;
   right: 54%;
 }
@@ -227,10 +235,14 @@ section.services .content-wrapper .right-side {
 }
 
 section.services .content-wrapper .left-side::before {
-  content: url(../img/1-rectangle.svg);
+  content: "";
   position: absolute;
+  background-image: url(../img/1-rectangle.svg);
+  background-size: 567px 159px;
+  width: 567px;
+  height: 159px;
   left: -130px;
-  top: -40px
+  top: -43px
 }
 
 section.services .content-wrapper .left-side .simple-text {
@@ -284,9 +296,13 @@ section.products .product-list .product-list-item {
 }
 
 section.products .product-list::before {
-  content: url(../img/1-square.svg);
+  content: "";
   position: absolute;
-  bottom: -45px;
+  background-image: url(../img/1-square.svg);
+  background-size: 214px 213px;
+  width: 214px;
+  height: 213px;
+  bottom: -40px;
   left: -35px;
   z-index: -1;
 }
@@ -333,9 +349,12 @@ section.about-us .content-wrapper .left-side {
 }
 
 section.about-us .content-wrapper .left-side::after {
-  position: relative;
-  content: url(../img/2-square.svg);
+  content: "";
   position: absolute;
+  background-image: url(../img/2-square.svg);
+  background-size: 546px 546px;
+  width: 546px;
+  height: 546px;
   bottom: -60px;
   right: -60px;
   z-index: -1;
@@ -535,6 +554,10 @@ footer .content-wrapper .contact-us a.bg-button {
     overflow: hidden;
   }
 
+  header::before {
+    display: none;
+  }
+
   header .content-wrapper nav.responsive {
     display: flex;
     align-items: center;
@@ -551,6 +574,14 @@ footer .content-wrapper .contact-us a.bg-button {
 
   .hero .hero-text {
     width: 80%;
+  }
+
+  .hero .hero-text::before {
+    background-size: 49px 49px;
+    width: 49px;
+    height: 49px;
+    top: -25px;
+    right: 50%;
   }
 
   .hero .hero-image {
@@ -606,6 +637,14 @@ footer .content-wrapper .contact-us a.bg-button {
     width: 100%;
   }
 
+  section.services .content-wrapper .left-side::before {
+    background-size: 400px 68px;
+    width: 400px;
+    height: 68px;
+    left: -110px;
+    top: -10px;
+  }
+
   section.services .content-wrapper .left-side .simple-text {
     font-size: 1rem;
     width: 258px;
@@ -646,8 +685,16 @@ footer .content-wrapper .contact-us a.bg-button {
     gap: 35px;
   }
 
-  section.products {
-    overflow: hidden;
+  section.products .product-list::before {
+    background-size: 93px 93px;
+    width: 93px;
+    height: 93px;
+    bottom: -18px;
+    left: -15px;
+  }
+
+  section.products .product-list::after {
+    display: none;
   }
 
   section.products .product-list .product-list-item:last-of-type {
@@ -656,7 +703,6 @@ footer .content-wrapper .contact-us a.bg-button {
 
   section.products .product-list .product-list-item {
     padding: 31px 21px;
-    background: linear-gradient(160deg, rgba(100, 123, 117, 0.01) 0%, rgba(100, 123, 100, 0) 77%, rgba(100, 123, 100, 0.15) 100%);
   }
 
   section.products .content-wrapper .product-list .product-list-item img {
@@ -685,15 +731,23 @@ footer .content-wrapper .contact-us a.bg-button {
     width: 0;
   }
 
+  section.about-us .content-wrapper .left-side::after {
+    background-size: 277px 285px;
+    width: 277px;
+    height: 285px;
+    bottom: -168px;
+    right: -33px;
+  }
+
   section.about-us .content-wrapper .right-side {
     width: 100%;
   }
 
   section.about-us .content-wrapper .left-side img {
     position: absolute;
-    left: -155px;
+    left: -140px;
     transform: translate(-50%, -50%);
-    width: 316px;
+    width: 286px;
   }
 
   section.about-us .content-wrapper .right-side .text-block {
@@ -716,10 +770,6 @@ footer .content-wrapper .contact-us a.bg-button {
 
   section.testimonials {
     padding-top: 110px;
-  }
-
-  section.testimonials {
-    overflow: hidden;
   }
 
   section.testimonials .content-wrapper .right-side {
