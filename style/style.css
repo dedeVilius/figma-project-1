@@ -46,7 +46,7 @@ html {
 }
 
 body {
-  background-color: #E5E5E5;
+  background: linear-gradient(to bottom, #F5E6DE 10%, #E5E5E5 30%);
   font-family: 'Avenir Next';
   font-size: 1.6rem;
   font-weight: 500;
